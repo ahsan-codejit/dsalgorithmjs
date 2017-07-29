@@ -1,0 +1,22 @@
+{
+  "name": "dsalgorithmjs",
+  "version": "1.0.0",
+  "description": "Implementation of data structure and algorithms in javascript and testing codes with testing framework mocha",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "data structure",
+    "algorithms",
+    "nodejs",
+    "mocha",
+    "javascript",
+    "chai"
+  ],
+  "author": "Md. Ahsan Habib",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
