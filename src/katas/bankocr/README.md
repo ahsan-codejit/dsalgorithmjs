@@ -1,4 +1,5 @@
 ## BankOCR
+Simple solution approach of the problem https://ccd-school.de/en/coding-dojo/application-katas/bankocr/
 
 ### To run test for bankocr codes
 - npm install mocha -g
