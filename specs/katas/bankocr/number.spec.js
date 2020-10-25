@@ -49,9 +49,21 @@ describe('#BankOCR Number', () => {
         expect(number.getDigit(digitMaps, number.getDigitMatrix(numberDigits, 0))).to.equal(1);
     });
 
+    it(`number.getDigit should return  ?`, () => {
+        expect(number.getDigit(digitMaps, '     I  |')).to.equal('?');
+    });
+
     it(`number.getDigitsPatterns should return array with 9 elements`, () => {
         expect(number.getDigitsPatterns(numberDigits).length).to.equal(9);
-    })
+    });
+
+    it(`number.getDigits should return 123456??9`, () => {
+        let numberDigitsString = '    _  _     _  _  _  _  _ ' +
+            '\n  I _I _II_II_ I_ | II_II_I' +
+            '\n  II_  _I  I _II_I  I|_I _I' +
+            '\n';
+        expect(number.getDigits(digitMaps, numberDigitsString)).to.equal('123456??9');
+    });
 
     it(`number.getDigits should return 123456789`, () => {
         expect(parseInt(number.getDigits(digitMaps, numberDigitsString))).to.equal(123456789);

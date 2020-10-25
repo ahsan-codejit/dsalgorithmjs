@@ -1,6 +1,6 @@
 const COLUMN = 3;
 let getDigit = (digitMaps, pattern) => {
-    return digitMaps[pattern];
+    return digitMaps[pattern] >= 0 ? digitMaps[pattern] : '?';
 }
 
 let getDigitMatrix = (numberDigits, position) => {
