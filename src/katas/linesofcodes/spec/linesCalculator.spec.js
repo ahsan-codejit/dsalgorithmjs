@@ -4,7 +4,7 @@ const expect = require('chai').expect;
 const linesCalculator = require('@src/katas/linesofcodes/linesCalculator');
 const codesReader = require('@src/katas/linesofcodes/codesReader');
 
-const codesFile = 'specs/katas/linesofcodes/codes-data.cs';
+const codesFile = 'src/katas/linesofcodes/data/codes.cs';
 let codes = codesReader.getCodes(codesFile);
 
 

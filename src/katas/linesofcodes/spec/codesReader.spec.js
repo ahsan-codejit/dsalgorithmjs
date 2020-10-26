@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 
 const codesReader = require('@src/katas/linesofcodes/codesReader');
 
-const codesFile = 'specs/katas/linesofcodes/codes-data.cs';
+const codesFile = 'src/katas/linesofcodes/data/codes.cs';
 
 describe(`#LinesOfCodes readCodes`, () => {
     it(`should read and return codes from file as a string`, () => {

@@ -11,7 +11,7 @@ describe('#BankOCR Number', () => {
     let emptyChar = ' ';
 
     let digitMaps = getDigitMaps(horizontalChar, verticalChar, emptyChar);
-    let file = 'specs/katas/bankocr/data.txt';
+    let file = 'src/katas/bankocr/data/account.txt';
 
     let numbersStrings = numbers.getNumbersStrings(file)
 
